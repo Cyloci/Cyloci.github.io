@@ -23,7 +23,7 @@
       <li><a href="https://github.com/psiloclast">GitHub</a></li>
     </ul>
 
-    <iframe src="https://calendar.google.com/calendar/embed?src=2t7tu89euug40sf28ggitf7mjg%40group.calendar.google.com&ctz=Europe%2FLondon" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <div id='calendar-container'></div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168767549-1"></script>
@@ -33,6 +33,12 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-168767549-1');
+    </script>
+    <script type="text/javascript">
+      const calendarId = '2t7tu89euug40sf28ggitf7mjg%40group.calendar.google.com';
+      const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      const html = `<iframe src="https://calendar.google.com/calendar/embed?src=${calendarId}&ctz=${timezone}" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>`;
+      document.getElementById('calendar-container').innerHTML = html;
     </script>
   </body>
 </html>
