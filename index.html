@@ -1,45 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Cyloci</title>
+    <link href="./dist/index.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Cyloci</h1>
+    <div
+      class="flex min-h-screen flex-col gap-2 items-center bg-gradient-to-br from-[#5800c4] to-[#ef00f7] text-gray-100 p-6 text-sm"
+    >
+      <img
+        class="w-60 mb-4 border-black bg-black bg-opacity-70 p-6 rounded-full"
+        src="https://static-cdn.jtvnw.net/jtv_user_pictures/d588dace-d61e-4aff-ae1a-c315439f5293-profile_image-600x600.png"
+        alt="profile pic"
+      />
+      <div>
+        <h1 class="w-60 text-center text-3xl font-bold mt-2">Cyloci</h1>
+        <p class="p-2 w-60 text-center opacity-90">
+          I'm just a memer, I meme my life away.
+        </p>
+      </div>
 
-    <p>Here are some links:</p>
-    <ul>
-      <li><a href="https://www.twitch.tv/cyloci">Twitch</a></li>
-      <li><a href="https://twitter.com/cyloci">Twitter</a></li>
-      <li><a href="https://www.reddit.com/r/cyloci">Subreddit</a></li>
-      <li><a href="https://www.youtube.com/channel/UCstaIg0mzlGSVCnWjig_cHw">YouTube</a></li>
-      <li><a href="https://discord.cyloci.com/">Discord</a></li>
-      <li><a href="https://www.instagram.com/cyloci/">Instagram</a></li>
-      <li><a href="https://github.com/cyloci">GitHub</a></li>
-      <li><a href="https://www.tiktok.com/@cyloci">TikTok</a></li>
-      <li><a href="https://steamcommunity.com/id/cyloci">Steam</a></li>
-      <li>Switch Friend Code - SW-0601-0345-0633</li>
-      <li><a href="https://www.twitch.tv/subs/cyloci">Subscribe on Twitch!</a></li>
-      <li><a href="https://www.patreon.com/cyloci">Patreon</a></li>
-      <li><a href="https://streamlabs.com/cyloci/tip">Donate</a></li>
-    </ul>
+      <div>
+        <h2 class="w-60 text-center text-xl font-bold mt-2">Socials</h2>
+        <p class="p-2 w-60 text-center opacity-90">
+          Follow me on ALL THE THINGS! (...or else 🔪)
+        </p>
+      </div>
+      <a
+        href="https://www.twitch.tv/cyloci"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Twitch
+      </a>
+      <a
+        id="stream-schedule-link"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Stream Schedule
+      </a>
+      <a
+        href="https://twitter.com/cyloci"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Twitter
+      </a>
+      <a
+        href="https://discord.cyloci.com/"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Discord
+      </a>
+      <a
+        href="https://www.reddit.com/r/cyloci"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Subreddit
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCstaIg0mzlGSVCnWjig_cHw"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        YouTube
+      </a>
+      <a
+        href="https://www.instagram.com/cyloci/"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Instagram
+      </a>
+      <a
+        href="https://github.com/cyloci"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        GitHub
+      </a>
+      <a
+        href="https://www.tiktok.com/@cyloci"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        TikTok
+      </a>
 
-    <div id='calendar-container'></div>
+      <div>
+        <h2 class="w-60 text-center text-xl font-bold mt-2">Gaming</h2>
+        <p class="p-2 w-60 text-center opacity-90">
+          I'll destroy you at Mario Kart! 😎
+        </p>
+      </div>
+      <a
+        href="https://steamcommunity.com/id/cyloci"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Steam
+      </a>
+      <span
+        id="switch-friend-code-button"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+        onclick="onClickSwitchFriendCodeButton()"
+      >
+        Show Switch Friend Code
+      </span>
+
+      <div>
+        <h2 class="w-60 text-center text-xl font-bold mt-2">Donations</h2>
+        <p class="p-2 w-60 text-center opacity-90">
+          Absolutely not necessary, but super appreciated!
+          <img
+            class="w-6 inline-block"
+            src="https://static-cdn.jtvnw.net/emoticons/v2/302347892/default/dark/5.0"
+          />
+        </p>
+      </div>
+      <a
+        href="https://www.twitch.tv/subs/cyloci"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Subscribe on Twitch
+      </a>
+      <a
+        href="https://www.patreon.com/cyloci"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Patreon
+      </a>
+      <a
+        href="https://streamlabs.com/cyloci/tip"
+        target="_blank"
+        class="block p-2 w-60 bg-black bg-opacity-70 text-center duration-150 hover:scale-105 ease-bounce cursor-pointer rounded-md"
+      >
+        Donate
+      </a>
+    </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168767549-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-168767549-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-168767549-1');
+      gtag("config", "UA-168767549-1");
     </script>
     <script type="text/javascript">
-      const calendarId = '2t7tu89euug40sf28ggitf7mjg%40group.calendar.google.com';
+      // Set timezone for Google Calendar
       const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-      const html = `<iframe src="https://calendar.google.com/calendar/embed?src=${calendarId}&ctz=${timezone}" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>`;
-      document.getElementById('calendar-container').innerHTML = html;
+      const link = `https://calendar.google.com/calendar/embed?src=2t7tu89euug40sf28ggitf7mjg%40group.calendar.google.com&ctz=${timezone}`;
+      const streamScheduleLink = document.getElementById(
+        "stream-schedule-link"
+      );
+      streamScheduleLink.href = link;
+
+      // Copy Switch Code
+      const switchFriendCodeButton = document.getElementById(
+        "switch-friend-code-button"
+      );
+      const switchCode = "SW-0601-0345-0633";
+      function onClickSwitchFriendCodeButton() {
+        switchFriendCodeButton.innerText = "Copied!";
+        setTimeout(() => {
+          navigator.clipboard.writeText(switchCode);
+          switchFriendCodeButton.innerText = switchCode;
+        }, 500);
+      }
     </script>
   </body>
 </html>
